@@ -1,0 +1,34 @@
+{
+    "/": {
+        "controller": "HomeController",
+        "action": "home"
+    },
+    "/register": {
+        "controller": "RegisterController",
+        "action": "register"       
+    },    
+    "/dologin": {
+        "controller": "LoginController",
+        "action": "login"
+    },
+    "/logout": {
+        "controller": "LogoutController",
+        "action": "logout"
+    },   
+    "/profile": {
+        "controller": "ProfileController",
+        "action": "showProfile"
+    },  
+    "/subirdatos": {
+        "controller": "SubirController",
+        "action": "subirEstadisticas"
+    },  
+    "/ranking": {
+        "controller": "CompareController",
+        "action": "compare"
+    },
+    "/events": {
+        "controller": "EventsController",
+        "action": "listEvents"
+    }
+}

@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block subirdatos %}
+    <form action="/subirdatos" method="post">
+        <div class="col-lg-4 form_register">
+            <!-- Search widget-->
+            <div class="card mb-4">
+                <div class="card-header">Subir estadística</div>
+        <div class="card-body">
+        <div class="form-group">          
+            <textarea id="datos" name="datos" rows="8" cols="100">            
+            </textarea><br>
+           
+            <form method="post" action="/subirdatos">
+                <label><input type="checkbox" id="" name="checkevent" value="event"> Evento</label><br>
+                <div class="form-group">                                                   
+                     <label for="campo">Seleccione si hay evento </label>
+                     <select name="evento" id="evento" class="form-control">
+                         <option value="Recursion Prime Palma de Mallorca">Recursion Prime Palma de Mallorca</option>
+                         <option value="Recursion Prime Barcelona" >Recursion Prime Barcelona</option>         
+                         <option value="Ingress First Saturday Valencia 11-2019" >Ingress First Saturday Valencia 11-2019</option>  
+                         <option value="Ingress First Saturday Valencia 12-2019" >Ingress First Saturday Valencia 12-2019</option>        
+                     </select><br>
+                                    
+                 </div>
+             </form>    
+
+            <input type="submit"  class="btn btn-primary" value="Submit">
+            <p>{{ mensaje }}</p>
+        </div>
+    </div>
+</div>
+</div>
+    </form>
+{% endblock %}

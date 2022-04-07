@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block home %}
+      <!-- Page header with logo and tagline-->
+      <header class="py-5 mb-4">
+        <div class="container">
+            <div class="text-center my-5">
+                <h1 class="fw-bolder home-text-color">Join the funniest game.</h1>
+                {% if session.nombre %}
+                <p class="lead mb-0 home-p-color">Start playing!!</p>
+                <p>Se ha logueado correctamente</p>
+                {% else %}    
+                <p class="lead mb-0 home-p-color">Create your <a href="/register">profile</a> and start playing!!</p>
+                {% endif %}   
+               
+
+            </div>
+        </div>
+    </header>      
+{% endblock %}

@@ -1,0 +1,80 @@
+"Time Span	Agent Name	Agent Faction	Date (yyyy-mm-dd)	Time (hh:mm:ss)	Level	Lifetime AP	Current AP	Unique Portals Visited	Unique Portals Drone Visited	Furthest Drone Distance	Portals Discovered	XM Collected	OPR Agreements	Resonators Deployed	Links Created	Control Fields Created	Mind Units Captured	Longest Link Ever Created	Largest Control Field	XM Recharged	Portals Captured	Unique Portals Captured	Mods Deployed	Hacks	Drone Hacks	Glyph Hack Points	Completed Hackstreaks	Longest Sojourner Streak	Resonators Destroyed	Portals Neutralized	Enemy Links Destroyed	Enemy Fields Destroyed	Battle Beacon Combatant	Drones Returned	Max Time Portal Held	Max Time Link Maintained	Max Link Length x Days	Max Time Field Held	Largest Field MUs x Days	Forced Drone Recalls	Distance Walked	Kinetic Capsules Completed	Unique Missions Completed	Mission Day(s) Attended	NL-1331 Meetup(s) Attended	First Saturday Events	Recursions	Months Subscribed	
+ALL TIME	Blackcherry1976	Resistance	2021-11-09	10:52:33	16	120368059	58150998	5836	147	4	5	450702360	255	71386	9985	8940	15922597	1130	2026772	335526313	6558	3261	10899	33157	420	6674	26	239	42344	6821	9924	5804	42	13	684	684	98143	111	470868	10	1651	65	273	2	2	22	1	9	"
+
+txt que subo 
+
+"Time Span	Agent Name	Agent Faction	Date (yyyy-mm-dd)	Time (hh:mm:ss)	Level	Lifetime AP	Current AP	Unique Portals Visited	Resonators Deployed	Links Created	Control Fields Created	XM Recharged	Portals Captured	Hacks	Resonators Destroyed	Mission Day(s) Attended	NL-1331 Meetup(s) Attended
+ALL TIME	Blackcherry1976	Resistance	2021-11-09	10:52:33	16	120368059	58150998	5836	71386	9985	8940	335526313	6558	33157	42344	2	2"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Time Span - ALL TIME
+Agent Name - Blackcherry1976
+Agent Faction - Resistance
+Date (yyyy-mm-dd) -2021-11-09
+Time (hh:mm:ss)	10:52:33
+Level	16
+Livetime AP	120368059
+Current AP	58150998
+Unique Portals Visited	5836
+Unique Portals Drone Visited	147
+Furthest Drone Distance	4
+Portals Discovered 5
+XM Collected	450702360
+OPR Agreements	255
+Resonators Deployed	71386
+Links Created	9985
+Control Fields Created	8940
+Mind Units Captured	15922597
+Longest Link Ever Created	1130
+Largest Control Field	2026772
+XM Recharged	335526313
+Portals Captured	6558
+Unique Portals Captured	3261
+Mods Deployed	10899
+Hacks	33157
+Drone Hacks	420
+Glyph Hack Points	6674
+Completed Hackstreaks	26
+Longest Sojourner Streak	239
+Resonators Destroyed	42344
+Portals Neutralized	6821
+Enemy Links Destroyed		9924
+Enemy Fields Destroyed	5804
+Battle Beacon Combatant	42
+Drones Returned	13
+Max Time Portal Held	684
+Max Time Tink Maintained	684
+Max Link Length x Days	98143
+Max Time Field Held	111
+Largest Field MUs x Days	470868
+Forced Drone Recalls	10
+Distance Walked	
+Kinetic Capsules Completed	
+Unique Missions Completed	
+Mission Day(s) Attended	
+NL-1331 Meetup(s) Attended	
+First Saturday Events	
+Recursions	
+Months Subscribed	

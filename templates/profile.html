@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block profile %}
+    <div class="col-lg-4 form_register">
+        <!-- Search widget-->
+        <div class="card mb-4">
+            <div class="card-header">Profile</div>
+                <div class="card-body">
+                    {% if userdata is empty %}
+                        <p>Este usuario no tiene actividad registrada</p>
+                        {% else %}      
+                            <p>Name: {{ userdata.getAgentName() }}</p>
+                            <p>Faction: {{ userdata.getFaction() }}</p>
+                            <hr>
+                            {% if userdata.getStats() is empty%}
+                                <p>Este usuario no ha subido stats</p>
+                                {% else %} 
+                                {% for stats in userdata.getStats() %}
+                                <p>Level: {{ stats.getLevel() }}</p>
+                                <p>LifetimeAp: {{ stats.lifetime_ap() }}</p>
+                                <p>CurrentAp: {{ stats.current_ap() }}</p>
+                                
+                            {% endfor %}
+                            {% endif %} 
+                    {% endif %} 
+
+                   <!--  si hay statsevents se mostrará el mensaje -->
+                    <hr>
+                    <p>{{mensaje}}</p>
+                    <hr>
+                      <!--  si mensaje está vacío es porque no hay statsevents  -->
+                    {% if mensaje is empty %}
+                        <p>Este usuario no ha acudido a ningún evento</p>
+                        <hr>
+                        <!--  si hay mensaje hay statsevents  -->
+                        {% else %} 
+                        <table>
+                            <tr>
+                                <th class="td_margin">Evento</th>
+                                <th class="td_margin">Lifetime</th>
+                                <th class="td_margin">UPortals</th>
+                                <th class="td_margin">ResDeployed</th>    
+                                <th class="td_margin">LinksCreated</th>
+                                <th class="td_margin">C_fields</th>    
+                                <th class="td_margin">Xm_recharged</th>
+                                <th class="td_margin">Portals</th>    
+                                <th class="td_margin">Hacks</th>  
+                                <th class="td_margin">ResDestroyed</th>                                                              
+                            </tr>     
+                    
+                            {% for diff in diference %}
+                            <tr>
+                                {% for result in diff %} 
+                            
+                                <td class="td_margin">{{ result }}</td> 
+                            
+                                {% endfor %}
+                            </tr>
+                            {% endfor %}
+                        </table>
+                    {% endif %} 
+
+                </div>                
+            </div>  
+        </div>
+    </div>
+{% endblock %}
+
+

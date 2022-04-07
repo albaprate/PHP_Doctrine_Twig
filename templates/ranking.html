@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block register %}
+ 
+   <!-- Side widgets-->
+    <div class="col-lg-4 form_register">
+        <!-- Search widget-->
+        <div class="card mb-4">
+            <div class="card-header">Ranking</div>
+                <div class="card-body">
+                    <form method="post" action="/ranking">
+                       <div class="form-group">                                                   
+                            <label for="campo">Campo de ordenación</label>
+                            <select name="campo" id="campo" class="form-control">
+                                <option value="lifetime_ap">Lifetime Ap</option>
+                                <option value="current_ap" selected>Current Ap</option>         
+                                <option value="mission_day_attended" selected>Mission Day Attended</option>           
+                                <option value="nl_meetup_attended" selected>NlMeetup Attended</option>        
+                            </select><br>
+                            <button type="submit" class="btn btn-primary">Submit</button><br>                        
+                        </div>
+                    </form>    
+                   {% if datos is empty %}
+                    <p></p>
+                   {% else %}
+                   <hr> 
+                   <p class="centrar">Resultado </p>    
+                   <table>    
+                       <tr>
+                           <th class="td_margin"></th>
+                           <th class="td_margin">Agent Name</th>
+                           <th class="td_margin">Lifetime Ap</th>
+                           <th class="td_margin">Mission_day_attended</th>
+                           <th class="td_margin">Nl_meetup_attended</th>    
+                                                                                  
+                       </tr>     
+                       <hr>              
+                   
+                       {% for dato in datos %}
+                           <tr>                   
+            
+                               <td class="td_margin">{{ loop.index }} </td>
+                               <td class="td_margin">{{ dato.getAgent().getAgentName() }} </td>  
+                               <td class="td_margin">{{ dato.getLifetime_ap() }} </td>  
+                               <td class="td_margin">{{ dato.getMission_day_attended() }} </td>  
+                               <td class="td_margin">{{ dato.getNl_meetup_attended() }} </td>   
+                               
+                           </tr>                                    
+                       {% endfor %}                       
+                   </table>
+                   {% endif %}
+                  
+                </div>                        
+            </div>  
+        </div>
+    </div>
+
+{% endblock %}

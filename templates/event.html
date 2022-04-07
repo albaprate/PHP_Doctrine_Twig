@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block event %}
+ 
+    <div class="col-lg-4 form_register">
+        <!-- Search widget-->
+        <div class="card mb-4">
+            <div class="card-header">Lista de eventos</div>
+                <div class="card-body">
+                     {%for event in events %}       
+                    <div class="border rounded mb-2" style="line-height:0.7em; padding:10px; font-size: 12px;">     
+                        <p>Evento: {{ loop.index }}</p>            
+                        <p>Fecha: {{ event.getDate_event | date("m/d/Y") }}</p>
+                        <p>Descripción: {{ event.getDescrip_event() }}</p>
+                        <p>Lugar: {{ event.getPlace_event }}</p>
+                    </div>  
+                    {% endfor %} 
+
+                    <form method="post" action="/events">
+                   
+                        <div class="form-group">                                                   
+                             
+                             <select name="evento" id="evento" class="form-control">
+                                 <option value="Recursion Prime Palma de Mallorca">Recursion Prime Palma de Mallorca</option>
+                                 <option value="Recursion Prime Barcelona" >Recursion Prime Barcelona</option>         
+                                 <option value="Ingress First Saturday Valencia 11-2019" >Ingress First Saturday Valencia 11-2019</option>  
+                                 <option value="Ingress First Saturday Valencia 12-2019" >Ingress First Saturday Valencia 12-2019</option>        
+                             </select><br>
+                             <input type="submit"  class="btn btn-primary" value="Submit">      
+                         </div>
+                     </form>    
+        <p>{{ mensaje }}</p>
+       <!-- si no hay agentes, no se muestra nada, si los hay, se muestra una lista con los nombres -->
+        {% if agents is empty  %}
+            <p></p>
+            {% else %}
+            <ul>
+                {%for agent in agents %}   
+                <li>{{agent}}</li>
+                {% endfor %} 
+            </ul>
+  
+        {% endif %}
+                 
+                </div>                
+            </div>  
+        </div>
+    </div>
+
+
+{% endblock %}
+
+

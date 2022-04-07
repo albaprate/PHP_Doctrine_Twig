@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block register %}
+
+   <!-- Side widgets-->
+    <div class="col-lg-4 form_register">
+        <!-- Search widget-->
+        <div class="card mb-4">
+            <div class="card-header">Register</div>
+                <div class="card-body">
+                    <form method="post" action="/register">
+                        <div class="form-group">
+                            <label for="user">UserName</label>
+                            <input id="user" name="name" class="form-control" type="text" placeholder="Enter your name..." aria-label="user.."  />
+                            <label for="password">Password</label>
+                            <input id="password" name="password" type="password" class="form-control" type="text" placeholder="Enter a password..." aria-label="password..."  />
+                            <label for="faction">Faction</label>
+                            <select name="faction" id="faction" class="form-control">
+                                <option value="resistance">Resistance</option>
+                                <option value="empire" selected>Empire</option>                  
+                            </select><br>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>       
+                            <p>{{ mensaje }}</p>                    
+                        </div>
+                    </form>    
+                </div>                
+            </div>  
+        </div>
+    </div>
+
+    
+<!-- </div> -->
+{% endblock %}
